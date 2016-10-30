@@ -1,0 +1,15 @@
+MIDlet-9: MidletParsingXmlFacture1, , mobileapplicationparsingxml.MidletParsingXmlFacture1
+MIDlet-8: MidletParsingAlerte1, , mobileapplicationparsingxml.MidletParsingAlerte1
+MIDlet-7: MidletModifierAlerte, , mobileapplicationparsingxml.MidletModifierAlerte
+MIDlet-6: MidletDeleteFacture, , mobileapplicationparsingxml.MidletDeleteFacture
+MIDlet-5: MidletAjoutFacture, , mobileapplicationparsingxml.MidletAjoutFacture
+MIDlet-4: MidletParsingXmlFacture, , mobileapplicationparsingxml.MidletParsingXmlFacture
+MIDlet-3: MidletDelete, ,mobileapplicationparsingxml.MidletDeleteAlerte
+MIDlet-2: MidletAjout,,mobileapplicationparsingxml.MidletAjoutAlerte
+MIDlet-1: MidletParsingXml, ,mobileapplicationparsingxml.MidletParsingXmlAlerte
+MIDlet-10: MidletStatistique, , mobileapplicationparsingxml.MidletStatistique
+MIDlet-Vendor: Vendor
+MIDlet-Version: 1.0
+MIDlet-Name: MobileApplicationParsingXML
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

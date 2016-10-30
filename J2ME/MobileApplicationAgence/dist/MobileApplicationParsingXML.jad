@@ -1,0 +1,17 @@
+MIDlet-1: MidletParsingXml, ,mobileapplicationparsingxml.MidletParsingXmlAlerte
+MIDlet-10: MidletStatistique, , mobileapplicationparsingxml.MidletStatistique
+MIDlet-2: MidletAjout,,mobileapplicationparsingxml.MidletAjoutAlerte
+MIDlet-3: MidletDelete, ,mobileapplicationparsingxml.MidletDeleteAlerte
+MIDlet-4: MidletParsingXmlFacture, , mobileapplicationparsingxml.MidletParsingXmlFacture
+MIDlet-5: MidletAjoutFacture, , mobileapplicationparsingxml.MidletAjoutFacture
+MIDlet-6: MidletDeleteFacture, , mobileapplicationparsingxml.MidletDeleteFacture
+MIDlet-7: MidletModifierAlerte, , mobileapplicationparsingxml.MidletModifierAlerte
+MIDlet-8: MidletParsingAlerte1, , mobileapplicationparsingxml.MidletParsingAlerte1
+MIDlet-9: MidletParsingXmlFacture1, , mobileapplicationparsingxml.MidletParsingXmlFacture1
+MIDlet-Jar-Size: 37718
+MIDlet-Jar-URL: MobileApplicationParsingXML.jar
+MIDlet-Name: MobileApplicationParsingXML
+MIDlet-Vendor: Vendor
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

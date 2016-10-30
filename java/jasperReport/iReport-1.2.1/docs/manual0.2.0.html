@@ -1,0 +1,244 @@
+<html>
+<head>
+<title>iReport</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+FONT.fsmall { font: normal 9pt Arial; }
+FONT.fmedio { font: normal 10pt Arial; }
+FONT.ftitparagrafo { font: bold 13pt Arial; }
+FONT.fparagrafo { font: bold 11pt Arial; }
+FONT.smaaaaal { font: bold 8pt Arial; }
+FONT.ftitle { font: normal 20pt Arial; }
+A.fmedio { COLOR: #000000; TEXT-DECORATION: underline; font: normal 10pt Arial; }
+A.fmedio:hover { COLOR: #AA0000; TEXT-DECORATION: underline; font: normal 10pt Arial; }
+FONT.redbig{ font: normal 14pt Arial;   COLOR: #AA0000;}
+
+A.fmed2 { COLOR: #000000; TEXT-DECORATION: underline; font: normal 12pt Arial; }
+A.fmed2:hover { COLOR: #AA0000; TEXT-DECORATION: underline; font: normal 12pt Arial; }
+
+A.fmedim { COLOR: #000000; TEXT-DECORATION: none; font: normal 10pt Arial; }
+A.fmedim:hover { COLOR: #AA0000; TEXT-DECORATION: underline; font: normal 10pt Arial; }
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr height="99"><td><table height="99" width="100%" border="0" cellspacing="0" cellpadding="0"><tr height="99">
+    <td width="200" height="99" valign="top"><img src="images/logo_igor.gif" ></td>
+    <td valign="top" width="99%" height="99"><table  width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+	  <td   height="49" bgcolor="#D4D0C8" valign="bottom" align="left"><font class="ftitle"><b>.:Documentation and tutorials</b></font></td>
+	  <td   height="49" bgcolor="#D4D0C8" valign="middle" align="right"><A href="http://sourceforge.net"><img border=0 src="images/sflogo.gif" width="105" height="31"></a><img src="images/null.gif"49" width="10" border=0 height="1"></td>
+	</tr>
+	<tr> 
+	  <td height="1" colspan="2" bgcolor="#000000"><img src="images/null.gif height="1" width="1"></td>
+	</tr>
+      </table></td>
+		</tr></table></td>
+  </tr> 
+  <tr><td><table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="120" valign="top" bgcolor="#C98890"><img src="images/null.gif" width="120" height="10">
+  <table cellspacing=2 cellpadding=0 width="100%">
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="index.php" class="fmedim">Home</a></font></td></tr>
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="screenshots.html" class="fmedim">Screenshots</a></font></td></tr>
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="docs.html" class="fmedim">Docs</a></font></td></tr>
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="http://sourceforge.net/project/showfiles.php?group_id=64348" class="fmedim">Download</a></font></td></tr>
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="http://sourceforge.net/projects/ireport" class="fmedim">Project page</a></font></td></tr>
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="credits.html" class="fmedim">Credits</a></font></td></tr>
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="http://ireport.sourceforge.net/donations.html" class="fmedim">Donations</a></font></td></tr>
+  </table>
+  <form method="post"
+    action="http://www.osdir.com/
+    modules.php?op=modload&amp;name=Downloads&amp;file=index">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+      <font class=fsmall>Vote for iReport on O'Reilly's OSDir.com</font>
+    </td>
+  </tr>
+  <tr>
+    <td><center>
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top" align="center" nowrap>
+            <select name="rating">
+              <option selected>--</option><br>
+              <option value="10">10</option><br>
+              <option value="9">9</option><br>
+              <option value="8">8</option><br>
+              <option value="7">7</option><br>
+              <option value="6">6</option><br>
+              <option value="5">5</option><br>
+              <option value="4">4</option><br>
+              <option value="3">3</option><br>
+              <option value="2">2</option><br>
+              <option value="1">1</option><br>
+            </select>
+            <input type="submit" value="Vote!"><input type="hidden" name="ratinglid" value="396"><input type="hidden" name="req" value="addrating"><input type="hidden" name="ratinguser" value="outside">
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</form>
+  </td>
+    <td width="1" height="1" bgcolor="#6F6F6F"><img src="images/null.gif height="1" width="1"></td>
+    <td valign="top"><table cellspacing=2 cellpadding=0 width="100%"><tr><td>
+    <font class="redbig">WARNING: this manual is a bit outdated, in particular chapters 7 and 8 are deprecated.<br>
+    		The updated documentation is available as commercial manual.<br>
+    		</font>
+    		
+		<br><font class="fparagrafo">&nbsp;Manual for iReport >= 0.2.0 (pure java version of iReport) </font><br><br>
+		  <table align="center" width="95%" border="0" cellspacing="0" cellpadding="0">
+		  <tr valign="top"><td>
+		  <!-- *********************************** TOC **************************** -->
+		      <ul>
+		      <font class="fsmall"><li><a href="#1.0"  class="fmedim">1 General Information about iReport</a><br><ul>
+				<li><a href="#1.1"  class="fmedim">1.1 What is iReport</a></li>
+				<li><a href="#1.2"  class="fmedim">1.2 Short history of iReport</a></li>
+				<li><a href="#1.3"  class="fmedim">1.3 Books about JasperReports</a></li>
+				<li><a href="#1.4"  class="fmedim">1.4 The main features of iReport</a></li>
+				<li><a href="#1.5"  class="fmedim">1.5 Useful JasperReports and iReport related links</a></li>
+		     		</ul>
+		     </font>
+		     <br>
+		     <font class="fsmall"><li><a href="cap2.html"  class="fmedim">2 Installing iReport</a><br><ul>
+				<li><a href="cap2.html#2.1"  class="fmedim">2.1 System Requirements</a></li>
+				<li><a href="cap2.html#2.2"  class="fmedim">2.2 Installation and configuration</a></li>
+				<li><a href="cap2.html#2.3"  class="fmedim">2.3 The final test...</a></li>
+		      		</ul>	
+		      </li>
+		      </font>
+		      <br>
+		     <font class="fsmall"><li><a href="cap3.html"  class="fmedim">3 iReport and JasperReports basic concepts</a><br><ul>
+				<li><a href="cap3.html#3.1"  class="fmedim">3.1 How JasperReports works</a></li>
+				<li><a href="cap3.html#3.2"  class="fmedim">3.2 Compilation end export of reports</a></li>
+				<li><a href="cap3.html#3.3"  class="fmedim">3.3 Our first very simple report</a></li>
+		      		</ul>	
+		      </li>
+		      </font>
+		      <br>
+		     <font class="fsmall"><li><a href="cap4.html"  class="fmedim">4 Connections and Datasources</a><br><ul>
+				<li><a href="cap4.html#4.1"  class="fmedim">4.1 Types of datasource</a></li>
+				<li><a href="cap4.html#4.2"  class="fmedim">4.2 Setting up a JDBC connection</a></li>
+				<li><a href="cap4.html#4.3"  class="fmedim">4.3 Setting up a custom datasource</a></li>
+		      		<li><a href="cap4.html#4.4"  class="fmedim">4.4 Implementing a new custom datasource</a></li>
+		      		</ul>
+		      </li>
+		      </font>
+		      <br>
+		      <font class="fsmall"><li><a href="cap5.html"  class="fmedim">5 Bands and groups</a><br><ul>
+				<li><a href="cap5.html#5.1"  class="fmedim">5.1 Bands</a></li>
+				<li><a href="cap5.html#5.2"  class="fmedim">5.2 Groups</a></li>
+				
+		      		</ul>	
+		      </li>
+		      </font>
+		      <br>
+		      <font class="fsmall"><li><a href="cap6.html"  class="fmedim">6 iReport plugins</a><br><ul>
+				<li><a href="cap6.html#6.1"  class="fmedim">6.1 The abstract iReport plugin</a></li>
+				<li><a href="cap6.html#6.2"  class="fmedim">6.2 The plugin file descriptor</a></li>
+				<li><a href="cap6.html#6.3"  class="fmedim">6.3 The hello world plugin</a></li>
+		      		</ul>	
+		      </li>
+		      </font>
+		      <br>
+		      <font class="fsmall"><li><a href="cap7.html"  class="fmedim">7 Using the XML datasource</a><br><ul>
+				<li><a href="cap7.html#7.1"  class="fmedim">7.1 Configuring an XML datasource</a></li>
+				<li><a href="cap7.html#7.2"  class="fmedim">7.2 The Record Path</a></li>
+				<li><a href="cap7.html#7.3"  class="fmedim">7.3 XML Datasource Syntax</a></li>
+				<li><a href="cap7.html#7.4"  class="fmedim">7.4 Addressbook sample</a></li>
+				<li><a href="cap7.html#7.5"  class="fmedim">7.5 XML Datasource license</a></li>
+		      		</ul>	
+		      </li>
+		      </font>
+		      <br>
+		      <font class="fsmall"><li><a href="cap8.html"  class="fmedim">8 Charts</a><br><ul>
+				<li><a href="cap8.html#8.1"  class="fmedim">8.1 Creation of a simple chart</a></li>
+		      		</ul>	
+		      </li>
+		      </font>
+		      <br>
+		      </ul>
+		      <font class="ftitparagrafo"><a name="1.0"></a><b>1 General Information about iReport</b></font><br><br>
+		      <font class="fsmall">
+		      	This is the <b>iReport</b> reference manual; it documents <b>iReport</b> version 0.3.1. As <b>iReport</b> is work in progress,
+		      	the manual gets updated frequently (if I have sufficent time). So there is a very good chance that this version
+		      	is out of date, unless you are looking at it on-line. The most recent version of this manual is available at
+		      	<a href="http://ireport.sourceforge.net/docs.html"  class="fmedim">http://ireport.sourceforge.net/docs.html</a> in many different formats.<br><br>
+		      	<b>iReport</b> is a powerful, intuitive and easy to use visual report designer/builder for JasperReports.<br>
+			<b>iReport</b> is free software. It is licensed with the GNU GENERAL PUBLIC LICENSE <a href="http://www.gnu.org/"  class="fmedim">http://www.gnu.org/</a>.<br>
+			<table><tr><td bgcolor=#FFFF00>If you want purchase a LGPL style licence for iReport, you can contact <a href="sales@jaspersoft.com">sales@jaspersoft.com</a>.</td></tr></table>
+			<br><b>IMPORTANT:</b> Reports of bugs, as well as questions and comments should be sent to iReport forums at <a href="ttp://sourceforge.net/forum/?group_id=64348"  class="fmedim">http://sourceforge.net/forum/?group_id=64348</a><br>
+			<br>
+			</font>
+			<font class="fparagrafo"><a name="1.1"></a>1.1 What is iReport</font><br><br>
+			<font class="fsmall"><b>iReport</b> is a program that helps users and developers that use JasperReports library to visually design reports.<br>Throught a
+			rich and very simple to use GUI, iReport provide all the most importatnt functions to create nice reports in a little time.<br>
+			iReport can help people that don't know JasperReports library to create complex reports and learn the XML syntax taking a look to the generated code.<br>
+			iReport can help skilled report designer to compose very complex page saving a lot of time.<br>
+			iReport is written in java. From the version 0.2.0 it was totally rewrited. For this reason they are two manuals for iReport. The new development direction
+			was taken for a lot of reasons. iReport has lost a bit of efficence leaving the win32 native GUI for a clear, pure swing interface. But this is the right direction...<br>  
+			<br>
+			</font>
+			<font class="fparagrafo"><a name="1.2"></a>1.2 Short history of iReport</font><br><br>
+			<font class="fsmall"><b>iReport</b> is a visual designer for JasperReports. But What's JasperReports? JasperReports is the best (IMHO) open source reporting engine available
+			for java community. It is developed by a small big genius called Teodor Danciu. JasperReports has always had one lack: it don't provide an adapted  tool to visually desing reports. JasperReports has hundred of
+			features, possibilities of use are infinitely... a person that does not have much confidence with the XML could have some problems to take fully advantage from the jasperreports library  .<br>
+		      	So in little time are borned some tools to fill the design hole... in order: <i>Designer for Jasper</i> by Jackie Manning and <i>JasperEdit</i> and <i>Jeez</i> by Erik Swenson, the first an editor capable to preview JasperReports XML and the second an Eclipse plugin.<br>
+		      	In the same period, I was trying DataVision, a tool by Jim Menard. So my idea was join the powerful of Jasperreports with the philosophy adopted by DataVision. I solved the problem of a slow
+		      	java interface using... VisualJ++. The result was one of the best visual designer for JasperReports. After six months, I posted a message on JasperReports forum about the idea to develop a pure java version
+		      	of iReport. The enthusiasm was such that the same day I began the porting... iReport for java is now a reality.
+		      	<br><br>
+		      	<font class="fparagrafo"><a name="1.3"></a>1.3 Books about JasperReports</font><br><br>
+			<font class="fsmall">The mission of this manual is  to introduce you in the world of JasperReports. However I suggest you to buy for few dollars the JasperReports Ultimate Guide, a fundamental manual to write jasperreports XML code (via iReport or directly to hand).
+			You can find JasperReports Ultimate Guide at <a href="http://jasperreports.sourceforge.net/more.docs.html"  class="fmedim">http://jasperreports.sourceforge.net/more.docs.html</a>.
+			<br><br>
+			</font>
+			<font class="fparagrafo"><a name="1.4"></a>1.4 The main features of iReport</font><br><br>
+			<font class="fsmall">The following list describes some of the important characteristics of iReport:<br><ul>
+			<li>98% of JasperReports tags supported</li>
+			<li>Visual designer wysiwyg with tools for draw rectangles, lines, ellipses, textfields fields, charts, subreports...</li>
+			<li>Builtin editor with syntax heighlighting for write expression</li>
+			<li>Support for unicode and non latin language (russian, chinese, korean,...)</li>
+			<li>Document structure browser</li>
+			<li>Integrated compiler and exporter</li>
+			<li>Support of all JDBC compliant databases</li>
+			<li>Support of all kind of JRDataSource</li>
+			<li>Wizard to create automagically reports</li>
+			<li>Support for subreports</li>
+			<li>Save backup</li>
+			<li>Support for templates</li>
+			<li>Facilities for fonts</li>
+			</ul> 
+			</font>
+			<font class="fparagrafo"><a name="1.5"></a>1.5 Useful JasperReports and iReport related links</font><br><br>
+			<font class="fsmall"><ul>
+			<li><a href="http://jasperreports.sourceforge.net/"  class="fmedim">JasperReports home page</a></li>
+			<li><a href="http://ireport.sourceforge.net/"  class="fmedim">iReport home page</a></li>
+			<li><a href="http://www.lowagie.com/iText/"  class="fmedim">iText home page</a> The pdf library used by JasperReports</li>
+			</ul> 
+		      	</font>
+		      <hr height=1 width=100%>
+		       <a href="cap2.html"  class="fmedim">Next &gt;&gt;</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="manual0.2.0.html"  class="fmedim">Table of Contents</a>
+			<br><br>
+		      </td>
+		      
+		      </td>
+		  </tr>
+		   </table>
+		   </td>
+		    </tr> 
+		   </table></td></tr></table></td>
+  </tr>
+  <tr height="15"><td><table  width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+	  <td height="1" colspan="2" bgcolor="#000000"><img src="images/null.gif height="1" width="1"></td>
+	</tr>
+	 <tr> 
+	  <td   height="14" bgcolor="#D4D0C8" valign="bottom" align="center"><font class="fsmall">(c) 2002 by Giulio Toffoli &lt;gt78 at businesslogic.it&gt;</font></td>
+	</tr>
+      </table></td>
+  </tr>
+</table></body>
+</html>

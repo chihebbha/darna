@@ -1,0 +1,8 @@
+MIDlet-3: MidletDelete, , mobileapplicationparsingxml.MidletDelete
+MIDlet-2: MidletAjout,,mobileapplicationparsingxml.MidletAjout
+MIDlet-1: MidletParsingXml, , mobileapplicationparsingxml.MidletParsingXml
+MIDlet-Vendor: Vendor
+MIDlet-Version: 1.0
+MIDlet-Name: MobileApplicationParsingXML
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

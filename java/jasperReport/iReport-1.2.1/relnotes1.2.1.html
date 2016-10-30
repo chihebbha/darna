@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>iReport</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+FONT.fsmall { font: normal 9pt Arial; }
+FONT.fmedio { font: normal 10pt Arial; }
+FONT.ftitparagrafo { font: bold 13pt Arial; }
+FONT.fparagrafo { font: bold 11pt Arial; }
+FONT.smaaaaal { font: bold 8pt Arial; }
+FONT.ftitle { font: normal 20pt Arial; }
+A.fmedio { COLOR: #000000; TEXT-DECORATION: underline; font: normal 10pt Arial; }
+A.fmedio:hover { COLOR: #AA0000; TEXT-DECORATION: underline; font: normal 10pt Arial; }
+
+A.fmed2 { COLOR: #000000; TEXT-DECORATION: underline; font: normal 12pt Arial; }
+A.fmed2:hover { COLOR: #AA0000; TEXT-DECORATION: underline; font: normal 12pt Arial; }
+
+A.fmedim { COLOR: #000000; TEXT-DECORATION: none; font: normal 10pt Arial; }
+A.fmedim:hover { COLOR: #AA0000; TEXT-DECORATION: underline; font: normal 10pt Arial; }
+</style>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<font class="ftitle"><b>iReport Release 1.2.1</b></font><br>
+<font class="fmedio">April 7, 2006
+<hr height="1" color="#000000" width=60% align="left">
+<br>
+The following changes have been made to software since release 1.2.0 
+<ul>
+	<li>Full support for JasperReports 1.2.1</li>
+	<li>New handling of conditional style</li>
+	<li>New dockable interface</li>
+	<li>New subreport wizard</li>
+	<li>New styles library</li>
+	<li>New translation status plugin</li>
+	<li>New date and percentage tools</li>
+	<li>New load/save query buttons</li>
+	<li>Serveral bug fixes and improvements</li>
+</ul>
+Contributors this time: 
+<ul>
+    <li>Felix Firgau</li>
+    <li>Giulio Toffoli</li>
+</ul>
+Thanks for your suggestions and your on going support using iReport!<br>
+<br>
+Giulio
+<br>
+<br>
+<font class="ftitparagrafo"><b>Complete Changelog.txt related to this version</b></font><br>
+<hr height="1" color="#000000" width=60% align="left">
+<pre>04/06/2006 17:09 gt        Added patch [1465400] to include report import directives in ReportQueryDialog
+04/05/2006 11.02 gt        Templates jrxml cleaned
+03/04/2006 18.23 gt        Fixed font bug for non latin languages (using the entry defaultFont to set the default font to use in the translation properties file)
+03/04/2006 11.00 gt        No longer restart needed to apply a different LookAndFeel
+03/04/2006 12.00 gt        New option to set the UI default font
+03/04/2006 12.00 gt        Fixed bug [1461210] defined fields changed when uncheck "auto retrieve fields"
+31/03/2006 12.00 gt        New load/save query buttons
+28/03/2006 12.00 gt        New translation status plugin
+28/03/2006 12.00 gt        New date and percentage tools
+28/03/2006 12.00 gt        New styles library
+28/03/2006 12.00 gt        New Don't Ask Just Reload option
+28/03/2006 12.00 gt        New subreport wizard
+19/03/2006 12.00 gt        Fixed bug [ 1440063 ] set classpath for folder problem (UI problem)
+19/03/2006 12.00 gt        Fixed bug [ 1228263 ] Wrong default attribute values 
+19/03/2006 12.00 gt        Fixed bug [ 1145080 ] sql report query code returning wrong types
+19/03/2006 12.00 gt        Fixed bug [ 1279489 ] band height is saved only when textentry focus leaves 
+19/03/2006 12.00 gt        New temporary instance of JasperReport passed to getFields for JRDataSourceProvider 
+19/03/2006 12.00 gt        Added support for user defined query languages (Bug [1441769])
+18/03/2006 12.00 gt        New view -> panels menu to hide/show panels
+18/03/2006 12.00 gt        New menu and format toolbars icons
+18/03/2006 12.00 gt        New minimizable tab panes
+17/03/2006 12.00 gt        Fixed bug [ 1376227 ] Default Compiler Incorrect
+17/03/2006 12.00 gt        Fixed bug [ 1448101 ] Incorrect origin of elements placed in a frame
+17/03/2006 12.00 gt        Rewrote the Extended Bean DataSource using Apache BeanUtils (Bug [1449830 ])
+16/03/2006 12.00 gt        Fixed bug [1449864] Fixed a problem with the text Alignment  
+16/03/2006 12.00 gt        Inline editing of text elements
+16/03/2006 12.00 gt        New dockable interface
+16/03/2006 12.00 gt        Fixed bug [1448124] Stretch Type attribute of Frame not restored on paste
+15/03/2006 12.00 gt        Fixed bug [1450104] hibernate exception
+15/03/2006 12.00 gt        New handling of conditional style
+15/03/2006 12.00 gt        Optimized jrxml generation 
+15/03/2006 12.00 gt        New handling of null element properties
+15/03/2006 12:00 gt        Fixed execution of HQL
+15/03/2006 12:00 gt        PropertySheet for common, graphic and text element attributes 
+</font></pre>
+

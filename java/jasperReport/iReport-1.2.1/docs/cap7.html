@@ -1,0 +1,543 @@
+<html>
+<head>
+<title>iReport</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<LINK REL=STYLESHEET TYPE="text/css" HREF="manual0.2.0/stylesheet.css" TITLE="Style">
+<style>
+.fsmall { font: normal 9pt Arial; }
+FONT.fmedio { font: normal 10pt Arial; }
+FONT.ftitparagrafo { font: bold 13pt Arial; }
+FONT.fparagrafo { font: bold 11pt Arial; }
+FONT.smaaaaal { font: bold 8pt Arial; }
+FONT.ftitle { font: normal 20pt Arial; }
+A.fmedio { COLOR: #000000; TEXT-DECORATION: underline; font: normal 10pt Arial; }
+A.fmedio:hover { COLOR: #AA0000; TEXT-DECORATION: underline; font: normal 10pt Arial; }
+
+A.fmed2 { COLOR: #000000; TEXT-DECORATION: underline; font: normal 12pt Arial; }
+A.fmed2:hover { COLOR: #AA0000; TEXT-DECORATION: underline; font: normal 12pt Arial; }
+
+A.fmedim { COLOR: #000000; TEXT-DECORATION: none; font: normal 10pt Arial; }
+A.fmedim:hover { COLOR: #AA0000; TEXT-DECORATION: underline; font: normal 10pt Arial; }
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr height="99"><td><table height="99" width="100%" border="0" cellspacing="0" cellpadding="0"><tr height="99">
+    <td width="200" height="99" valign="top"><img src="images/logo_igor.gif" ></td>
+    <td valign="top" width="99%" height="99"><table  width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+	  <td   height="49" bgcolor="#D4D0C8" valign="bottom" align="left"><font class="ftitle"><b>.:Documentation and tutorials</b></font></td>
+	  <td   height="49" bgcolor="#D4D0C8" valign="middle" align="right"><A href="http://sourceforge.net"><img border=0 src="images/sflogo.gif" width="105" height="31"></a><img src="images/null.gif"49" width="10" border=0 height="1"></td>
+	</tr>
+	<tr> 
+	  <td height="1" colspan="2" bgcolor="#000000"><img src="images/null.gif height="1" width="1"></td>
+	</tr>
+      </table></td>
+		</tr></table></td>
+  </tr> 
+  <tr><td><table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="120" valign="top" bgcolor="#C98890"><img src="images/null.gif" width="120" height="10">
+  <table cellspacing=2 cellpadding=0 width="100%">
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="index.php" class="fmedim">Home</a></font></td></tr>
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="screenshots.html" class="fmedim">Screenshots</a></font></td></tr>
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="docs.html" class="fmedim">Docs</a></font></td></tr>
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="http://sourceforge.net/project/showfiles.php?group_id=64348" class="fmedim">Download</a></font></td></tr>
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="http://sourceforge.net/projects/ireport" class="fmedim">Project page</a></font></td></tr>
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="credits.html" class="fmedim">Credits</a></font></td></tr>
+	<tr><td bgcolor="#EFA7B0"><font class="fmedio">&nbsp;<A HREF="http://ireport.sourceforge.net/donations.html" class="fmedim">Donations</a></font></td></tr>
+  </table>
+  <form method="post"
+    action="http://www.osdir.com/
+    modules.php?op=modload&amp;name=Downloads&amp;file=index">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+      <font class=fsmall>Vote for iReport on O'Reilly's OSDir.com</font>
+    </td>
+  </tr>
+  <tr>
+    <td><center>
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top" align="center" nowrap>
+            <select name="rating">
+              <option selected>--</option><br>
+              <option value="10">10</option><br>
+              <option value="9">9</option><br>
+              <option value="8">8</option><br>
+              <option value="7">7</option><br>
+              <option value="6">6</option><br>
+              <option value="5">5</option><br>
+              <option value="4">4</option><br>
+              <option value="3">3</option><br>
+              <option value="2">2</option><br>
+              <option value="1">1</option><br>
+            </select>
+            <input type="submit" value="Vote!"><input type="hidden" name="ratinglid" value="396"><input type="hidden" name="req" value="addrating"><input type="hidden" name="ratinguser" value="outside">
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</form>
+  </td>
+    <td width="1" height="1" bgcolor="#6F6F6F"><img src="images/null.gif height="1" width="1"></td>
+    <td valign="top"><table cellspacing=2 cellpadding=0 width="100%"><tr><td>
+		<br>
+		  <table align="center" width="95%" border="0" cellspacing="0" cellpadding="0">
+		  <tr valign="top"><td>
+			<a href="cap6.html"  class="fmedim">&lt;&lt; Previous</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="cap8.html"  class="fmedim">Next &gt;&gt;</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="manual0.2.0.html"  class="fmedim">Table of Contents</a>
+			<hr height=1 width=100%>
+		      
+		      <font class="ftitparagrafo"><a name="7.0"></a><b>7 Using the XML datasource</b></font><br><br>
+		      <font class="fsmall">Starting from version 0.3.2, iReport provides an XML datasource that permit to fill a report reading data from an XML file.<br>
+		      <font size="+1" color="#FF0000">iReport 0.4.0 use JRXmlDatasource shipped with JasperReports (from version 0.6.x)</font>		      
+		      <font class="fsmall"><br><br>This new implementation was developed by Peter Severin (developer of JasperAssistant).<br>This new implementation is much powerful supporting real XPath expressions. Here is what JasperReports documentation says about JRXmlDatasource.<br>
+		      
+		      <table style="border-width: 1px; border-style: solid; border-color: black" bgcolor="#FFCCCC"">
+		      	<tr><td class="fsmall">
+		      	<P class="fsmall">
+		      	<FONT SIZE="-1">
+net.sf.jasperreports.engine.data</FONT>
+<BR>
+Class JRXmlDataSource</H2>
+<PRE>
+java.lang.Object
+  |
+  +--<B>net.sf.jasperreports.engine.data.JRXmlDataSource</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://jasperreports.sourceforge.net/api/net/sf/jasperreports/engine/JRDataSource.html">JRDataSource</A>, <A HREF="http://jasperreports.sourceforge.net/api/net/sf/jasperreports/engine/JRRewindableDataSource.html">JRRewindableDataSource</A></DD>
+</DL>
+<HR>
+<DL>
+<DT>public class <B>JRXmlDataSource</B><DT>extends java.lang.Object<DT>implements <A HREF="http://jasperreports.sourceforge.net/api/net/sf/jasperreports/engine/JRRewindableDataSource.html">JRRewindableDataSource</A></DL>
+
+XML data source implementation that allows to access the data from a xml
+ document using XPath expressions.
+ <p>
+ The data source is constructed around a node set (record set) selected
+ by an XPath expression from the xml document.
+ </p>
+ <p>
+ Each field can provide an additional XPath expresion that will be used to
+ select its value. This expression must be specified using the "fieldDescription"
+ element of the field. The expression is evaluated in the context of the current
+ node thus the expression should be relative to the current node.
+ </p>
+ <p>
+ To support subreports, sub data sources can be created. There are two different methods 
+ for creating sub data sources. The first one allows to create a sub data source rooted 
+ at the current node. The current node can be seen as a new document around which the 
+ sub data source is created. The second method allows to create a sub data source that
+ is rooted at the same document that is used by the data source but uses a different 
+ XPath select expression. 
+ </p>
+ <p>
+ Example:
+ <pre>
+ &lt;A&gt;
+ 	&lt;B id="0"&gt;
+ 		&lt;C&gt;
+ 		&lt;C&gt;
+ 	&lt;/B&gt;
+ 	&lt;B id="1"&gt;
+ 		&lt;C&gt;
+ 		&lt;C&gt;
+ 	&lt;/B&gt;
+ 	&lt;D id="3"&gt;
+ 		&lt;E&gt;
+ 		&lt;E&gt;
+ 	&lt;/D&gt;
+ &lt;/A&gt;
+ </pre>
+ <p>
+ Data source creation
+ <ul>
+ <li>new JRXmlDataSource(document, "/A/B") - creates a data source with two nodes of type /A/B
+ <li>new JRXmlDataSource(document, "/A/D") - creates a data source with two nodes of type /A/D
+ </ul>
+ Field selection
+ <ul>
+ <li>@id - will select the "id" attribute from the current node
+ <li>C - will select the value of the first node of type C under the current node. 
+ </ul>
+ Sub data source creation
+ <ul>
+ <li>"((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/B/C")
+ 	- in the context of the node B, creates a data source with elements of type /B/C
+ <li>"((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("/A/D")
+ 	- creates a data source with elements of type /A/D
+ </ul>
+ </p>
+ <p>
+ Generally the full power of XPath expression is available. As an example, "/A/B[@id > 0"] will select all the
+ nodes of type /A/B having the id greater than 0. 
+ For a short XPath tutorial check the following URL:
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>Peter Severin (peter_p_s@sourceforge.net, contact@jasperassistant.com)</DD>
+</DL>
+		      	</td></tr>
+		      </table>
+		      <br>
+		      This chapter cover the old iReport implementation of XML datasource. This can help to use the new one.
+		      
+		      
+		      <br><br>
+		      </font>
+		      <font class="fparagrafo"><a name="7.1"></a><b>7.1 Configuring an XML datasource</b></font><br><br>
+		      <font class="fsmall">The first step to use an XML file as a datasource is configure an XML Datasource. Select menu <font color="#AA0000"><b>Datasource &gt; Connections / Datasources</b></font>, press <font color="#AA0000"><b>New</b></font> and  select "XML file datasource" as connection type.<br>
+		      
+		      <table border=0><tr><td><a href="manual0.2.0/7_1big.jpg"><img border=0 src="manual0.2.0/7_1.jpg"></a></td></tr><tr><td><font class="fsmall"><b>Fig.7.1: The XML datasource configuration panel.</b></font></td></tr></table>
+		      
+		      <br>Fill the name field with the name of this datasource (i.e. Adressbook), select the XML file and set the <b>record path</b>.<br><br>
+		      </font><br><br>
+		      <font class="ftitparagrafo"><a name="7.2"></a><b>7.2 The Record Path</b></font><br><br>
+		      <font class="fsmall">An XML document is structured as a tree. JasperReports need data organized as a record set, so we must present a tree as set of record. The Record Path is a string that define the minimum path
+		      required to define a record.<br>
+		      Example 1:<br>
+		      <pre>
+<b>&lt;palette&gt;</b>
+    <b>&lt;color&gt;</b>Red<b>&lt;/color&gt;</b>
+    <b>&lt;color&gt;</b>Green<b>&lt;/color&gt;</b>
+    <b>&lt;color&gt;</b>Blue<b>&lt;/color&gt;</b>
+<b>&lt;/palette&gt;</b></pre>
+		      It this very simple case, the Record Path is the path from the root (tag <b>palette</b>) to the leaf (tag <b>color</b>): <b>/palette/color</b><br>
+		      We use the same record path for this document (Example 2):<br>
+		       		      <pre>
+<b>&lt;palette&gt;</b>
+    <b>&lt;color&gt;</b>
+    	<b>&lt;name&gt;</b>Red<b>&lt;/name&gt;</b>
+    	<b>&lt;red&gt;</b>255<b>&lt;red&gt;</b>
+    	<b>&lt;green&gt;</b>0<b>&lt;green&gt;</b>
+    	<b>&lt;blue&gt;</b>0<b>&lt;blue&gt;</b>
+    <b>&lt;/color&gt;</b>
+    <b>&lt;color&gt;</b>
+    	<b>&lt;name&gt;</b>Green<b>&lt;/name&gt;</b>
+    	<b>&lt;red&gt;</b>0<b>&lt;red&gt;</b>
+    	<b>&lt;green&gt;</b>255<b>&lt;green&gt;</b>
+    	<b>&lt;blue&gt;</b>0<b>&lt;blue&gt;</b>
+    <b>&lt;/color&gt;</b>
+    <b>&lt;color&gt;</b>
+    	<b>&lt;name&gt;</b>Blue<b>&lt;/name&gt;</b> 
+    	<b>&lt;red&gt;</b>255<b>&lt;red&gt;</b>
+    	<b>&lt;green&gt;</b>0<b>&lt;green&gt;</b>
+    	<b>&lt;blue&gt;</b>0<b>&lt;blue&gt;</b>
+    <b>&lt;/color&gt;</b>
+<b>&lt;/palette&gt;</b></pre>
+		      Please note that in this case the path don't ends with a leaf tag.<br>
+		      In general, <font color="#AA0000"><b><i>the end tag is the first tag that has children of different type or is a leaf</i></b></font>.<br><br>
+		      When the document become more complex, we can read prodoce a sub-datasource starting from a child.
+		      In example 3 we can see that any <b>color</b> can have 0 or more <b>alias</b>es...	      
+<pre><b>&lt;palette&gt;</b>
+    <b>&lt;color&gt;</b>
+    	<b>&lt;name&gt;</b>Red<b>&lt;/name&gt;</b>
+	<b>&lt;alias type="html"&gt;</b>#FF0000<b>&lt;/alias&gt;</b>
+	<b>&lt;alias type="rgb"&gt;</b>255, 0, 0<b>&lt;/alias&gt;</b>
+	<b>&lt;alias type="CMYK"&gt;</b>0, 99, 100, 0<b>&lt;/alias&gt;</b>
+    <b>&lt;/color&gt;</b>
+    <b>&lt;color&gt;</b>
+    	<b>&lt;name&gt;</b>Green<b>&lt;/name&gt;</b>
+	<b>&lt;alias type="html"&gt;</b>#0000FF<b>&lt;/alias&gt;</b>
+	<b>&lt;alias type="rgb"&gt;</b>0, 0, 255<b>&lt;/alias&gt;</b>
+	<b>&lt;alias type="lab"&gt;</b>88, -79, 81<b>&lt;/alias&gt;</b>
+	<b>&lt;alias type="CMYK"&gt;</b>63, 0, 100, 0<b>&lt;/alias&gt;</b>
+    <b>&lt;/color&gt;</b>
+    <b>&lt;color&gt;</b>
+    	<b>&lt;name&gt;</b>Blue<b>&lt;/name&gt;</b>
+	<b>&lt;alias type="html"&gt;</b>#0000FF<b>&lt;/alias&gt;</b>
+	<b>&lt;alias type="rgb"&gt;</b>0, 0, 255<b>&lt;/alias&gt;</b>
+    <b>&lt;/color&gt;</b>
+<b>&lt;/palette&gt;</b></pre>		      
+		      In this case we can think to tags <b>alias</b> as a set of records childs of master record <b>/palette/color</b>, the childs record will have as record path
+		      the value <b>/color/alias</b>:
+<pre><b>&lt;color&gt;</b>
+    <b>&lt;alias type="html"&gt;</b>#FF0000<b>&lt;/alias&gt;</b>
+    <b>&lt;alias type="rgb"&gt;</b>255, 0, 0<b>&lt;/alias&gt;</b>
+    <b>&lt;alias type="CMYK"&gt;</b>0, 99, 100, 0<b>&lt;/alias&gt;</b>
+<b>&lt;/color&gt;</b></pre>Note as this XML is very similar to example 1.	
+		      </font><br><br>
+		      
+		      <font class="ftitparagrafo"><a name="7.3"></a><b>7.3 XML Datasource Syntax </b></font><br><br>
+		      <font class="fsmall">To bind fields inside the XML, a syntax similar to XPath is used. The field path is stored in the field description (this because the field name don't support
+		      a name like "/palette/color").<br>
+		      The path syntax is really simple. Is a recursive expression:<br><br>
+		      <font color="#AA0000" size=+1><b>&lt;base_path&gt;[&lt;symbol&gt; &lt;base_path&gt;[&lt;symbol&gt;&lt;...&gt;] ]</b></font><br>
+		      <br>
+		      <table border=0>
+		      <tr><td  valign="top"><font class="fsmall">&lt;base_path&gt;</td>
+		      <td valign="top"><font class="fsmall">is the path from the root to the tag. If this path is longer than the Record Path, it's cuted to the Record Path. It is required for a field
+		      definition. If it's alone, the value of the tag is returned.<br>
+		      Example: /palette/color</td>
+		      </tr>
+		      <tr><td valign="top"><font class="fsmall">&lt;symbol&gt;</td>
+		      <td valign="top"><font class="fsmall">is used to add an extra path to the base path and to define what should be returned.<br>
+		      <b>+</b> add the following path to the base_path (this happen when the base_path = record path);<br>
+		      <b>@</b> return the attribute value: it's followed by the attribute name;<br>
+		      <b>*</b> return all tags identified by the following path as a JRXMLDatasource<br><br>
+		      Examples:<br><br>
+		      /palette/color+name<br>
+		      /color/alias@type<br>
+		      /palette/color*alias<br>
+		      /addressbook/catogory/person+other_info+extra_time/hobbies*hobby<br>
+		      /addressbook@creation_date
+		      </td>
+		      </tr>
+		      </table>
+		      
+		    
+		      </font><br><br>
+		    
+		     <font class="ftitparagrafo"><a name="7.4"></a><b>7.4 Addressbook sample </b></font><br><br>
+		      <font class="fsmall">This sample shows how to use the JRXMLDatasource using subreports.<br>
+		      The sample is composed by 4 files:<br><br>
+		      <b>addressbook.xml</b> is the data file<br>
+		      <b>addressbook.jrxml</b> is the master report file<br>
+		      <b>hobby.jrxml</b> is the hobby subreport<br>
+		      <b>eamil.jrxml</b> is the email subreport<br>
+		      <br><br>
+		      <font color="#AA0000" size=+1>addressbook.xml</font>
+		    <pre><code>
+<font color="#0000FF"><b>&lt;addressbook&gt;</b></font>
+   <font color="#0000FF"><b>&lt;category name="home"&gt;</b></font>
+      <font color="#0000FF"><b>&lt;person id="1"&gt;</b></font>                                                           
+          <font color="#0000FF"><b>&lt;LASTNAME&gt;</b></font>Davolio<font color="#0000FF"><b>&lt;/LASTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;FIRSTNAME&gt;</b></font>Nancy<font color="#0000FF"><b>&lt;/FIRSTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;hobbies&gt;</b></font>
+          	<font color="#0000FF"><b>&lt;hobby&gt;</b></font>Radio Control<font color="#0000FF"><b>&lt;/hobby&gt;</b></font>
+          	<font color="#0000FF"><b>&lt;hobby&gt;</b></font>R/C Cars<font color="#0000FF"><b>&lt;/hobby&gt;</b></font>
+          	<font color="#0000FF"><b>&lt;hobby&gt;</b></font>Micro R/C Cars<font color="#0000FF"><b>&lt;/hobby&gt;</b></font>
+          	<font color="#0000FF"><b>&lt;hobby&gt;</b></font>Die-Cast Models<font color="#0000FF"><b>&lt;/hobby&gt;</b></font>
+          <font color="#0000FF"><b>&lt;/hobbies&gt;</b></font>
+          <font color="#0000FF"><b>&lt;email&gt;</b></font>email1@my.domain.it<font color="#0000FF"><b>&lt;/email&gt;</b></font>
+          <font color="#0000FF"><b>&lt;email&gt;</b></font>email2@my.domain2.it<font color="#0000FF"><b>&lt;/email&gt;</b></font> 
+          
+      <font color="#0000FF"><b>&lt;/person&gt;</b></font>
+      <font color="#0000FF"><b>&lt;person id="2"&gt;</b></font>
+          <font color="#0000FF"><b>&lt;LASTNAME&gt;</b></font>Fuller<font color="#0000FF"><b>&lt;/LASTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;FIRSTNAME&gt;</b></font>Andrew<font color="#0000FF"><b>&lt;/FIRSTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;email&gt;</b></font>email3@my.domain3.it<font color="#0000FF"><b>&lt;/email&gt;</b></font> 
+          <font color="#0000FF"><b>&lt;email&gt;</b></font>email4@my.domain4.it<font color="#0000FF"><b>&lt;/email&gt;</b></font> 
+      <font color="#0000FF"><b>&lt;/person&gt;</b></font>
+      <font color="#0000FF"><b>&lt;person id="3"&gt;</b></font>                                                                 
+          <font color="#0000FF"><b>&lt;LASTNAME&gt;</b></font>Leverling<font color="#0000FF"><b>&lt;/LASTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;FIRSTNAME&gt;</b></font>Janet<font color="#0000FF"><b>&lt;/FIRSTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;hobbies&gt;</b></font>
+          	<font color="#0000FF"><b>&lt;hobby&gt;</b></font>Rockets<font color="#0000FF"><b>&lt;/hobby&gt;</b></font>
+          	<font color="#0000FF"><b>&lt;hobby&gt;</b></font>Puzzles<font color="#0000FF"><b>&lt;/hobby&gt;</b></font>
+          	<font color="#0000FF"><b>&lt;hobby&gt;</b></font>Science Hobby<font color="#0000FF"><b>&lt;/hobby&gt;</b></font>
+          	<font color="#0000FF"><b>&lt;hobby&gt;</b></font>Toy Horse<font color="#0000FF"><b>&lt;/hobby&gt;</b></font> 
+          <font color="#0000FF"><b>&lt;/hobbies&gt;</b></font>
+          <font color="#0000FF"><b>&lt;email&gt;</b></font>email45@my.domain3.it<font color="#0000FF"><b>&lt;/email&gt;</b></font> 
+          <font color="#0000FF"><b>&lt;email&gt;</b></font>email455@my.domain4.it<font color="#0000FF"><b>&lt;/email&gt;</b></font> 
+      <font color="#0000FF"><b>&lt;/person&gt;</b></font>
+  <font color="#0000FF"><b>&lt;/category&gt;</b></font>
+  <font color="#0000FF"><b>&lt;category name="work"&gt;</b></font>    
+      <font color="#0000FF"><b>&lt;person id="4"&gt;</b></font>                                                            
+          <font color="#0000FF"><b>&lt;LASTNAME&gt;</b></font>Peacock<font color="#0000FF"><b>&lt;/LASTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;FIRSTNAME&gt;</b></font>Margaret<font color="#0000FF"><b>&lt;/FIRSTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;hobbies&gt;</b></font>
+          	<font color="#0000FF"><b>&lt;hobby&gt;</b></font>Toy Horse<font color="#0000FF"><b>&lt;/hobby&gt;</b></font> 
+          <font color="#0000FF"><b>&lt;/hobbies&gt;</b></font>
+          <font color="#0000FF"><b>&lt;email&gt;</b></font>Peacock@margaret.com<font color="#0000FF"><b>&lt;/email&gt;</b></font>  
+      <font color="#0000FF"><b>&lt;/person&gt;</b></font>
+      <font color="#0000FF"><b>&lt;person id="5"&gt;</b></font>
+          <font color="#0000FF"><b>&lt;LASTNAME&gt;</b></font>Buchanan<font color="#0000FF"><b>&lt;/LASTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;FIRSTNAME&gt;</b></font>Steven<font color="#0000FF"><b>&lt;/FIRSTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;hobbies&gt;</b></font>
+          <font color="#0000FF"><b>&lt;/hobbies&gt;</b></font>
+          <font color="#0000FF"><b>&lt;email&gt;</b></font>Buchanan@steven.com<font color="#0000FF"><b>&lt;/email&gt;</b></font>  
+      <font color="#0000FF"><b>&lt;/person&gt;</b></font>
+      <font color="#0000FF"><b>&lt;person id="6"&gt;</b></font>
+          <font color="#0000FF"><b>&lt;LASTNAME&gt;</b></font>Suyama<font color="#0000FF"><b>&lt;/LASTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;FIRSTNAME&gt;</b></font>Michael<font color="#0000FF"><b>&lt;/FIRSTNAME&gt;</b></font>
+      <font color="#0000FF"><b>&lt;/person&gt;</b></font>
+      <font color="#0000FF"><b>&lt;person id="7"&gt;</b></font>
+          <font color="#0000FF"><b>&lt;LASTNAME&gt;</b></font>King<font color="#0000FF"><b>&lt;/LASTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;FIRSTNAME&gt;</b></font>Robert<font color="#0000FF"><b>&lt;/FIRSTNAME&gt;</b></font>
+      <font color="#0000FF"><b>&lt;/person&gt;</b></font>
+  <font color="#0000FF"><b>&lt;/category&gt;</b></font>
+  <font color="#0000FF"><b>&lt;category name="Other"&gt;</b></font>    
+      <font color="#0000FF"><b>&lt;person id="8"&gt;</b></font>   
+          <font color="#0000FF"><b>&lt;LASTNAME&gt;</b></font>Callahan<font color="#0000FF"><b>&lt;/LASTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;FIRSTNAME&gt;</b></font>Laura<font color="#0000FF"><b>&lt;/FIRSTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;email&gt;</b></font>email25@my.domain3.it<font color="#0000FF"><b>&lt;/email&gt;</b></font> 
+      <font color="#0000FF"><b>&lt;/person&gt;</b></font>
+      <font color="#0000FF"><b>&lt;person id="9"&gt;</b></font>
+          <font color="#0000FF"><b>&lt;LASTNAME&gt;</b></font>Dodsworth<font color="#0000FF"><b>&lt;/LASTNAME&gt;</b></font>
+          <font color="#0000FF"><b>&lt;email&gt;</b></font>Dodsworth@my.anne.it<font color="#0000FF"><b>&lt;/email&gt;</b></font> 
+      <font color="#0000FF"><b>&lt;/person&gt;</b></font>
+  <font color="#0000FF"><b>&lt;/category&gt;</b></font>                                                           
+<font color="#0000FF"><b>&lt;/addressbook&gt;</b></font></code></pre>
+		<br>We have defined a datasource named Addressbook that use addressbook.xml as data file. The Record path is: <b>/addressbook/category/person</b><br>
+		<br>Fields in the report are defined as follow:<br><br>
+		  <table border=0 cellpadding=1 cellspacing=1 bgcolor=#000000>
+		      <tr>
+		      	<td bgcolor="#AAAAAA"><font class="fsmall">&nbsp;Field Name&nbsp;</td>
+		      	<td bgcolor="#AAAAAA"><font class="fsmall">&nbsp;Field Description&nbsp;</td>
+		      	<td bgcolor="#AAAAAA"><font class="fsmall">&nbsp;Type&nbsp;</td>
+		      </tr> 
+		      <tr>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;CATEGORY&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;/addressbook/category@name&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;java.lang.String&nbsp;</td>
+		      </tr> 
+		      <tr>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;PERSON_ID&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;/addressbook/category/person@id&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;java.lang.String&nbsp;</td>
+		      </tr> 
+		      <tr>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;LASTNAME&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;/addressbook/category/person+LASTNAME&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;java.lang.String&nbsp;</td>
+		      </tr> 
+		      <tr>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;FIRSTNAME&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;/addressbook/category/person+FIRSTNAME&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;java.lang.String&nbsp;</td>
+		      </tr>
+		      <tr>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;HOBBIES&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;/addressbook/category/person+hobbies*hobby&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;java.lang.Object (castable to JRDataSource)&nbsp;</td>
+		      </tr> 
+		      <tr>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;EMAIL_ADDRESSES&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;/addressbook/category/person*email&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;java.lang.Object (castable to JRDataSource)&nbsp;</td>
+		      </tr> 
+		      </table>	
+<br>To the master report (figure 7.2) we have added a group named CATEGORY that has as expression the category name.<br>
+<table border=0><tr><td><a href="manual0.2.0/7_2big.jpg"><img border=0 src="manual0.2.0/7_2.jpg"></a></td></tr><tr><td><font class="fsmall"><b>Fig.7.2: The master report.</b></font></td></tr></table>
+		      We have two subreport too, one for hobbies of a person and one for email addresses.<br>
+		      The first subreport element has $F{HOBBIES} as connection expression (of type <i>datasource expression</i>) and as subreport expression "/hobby.jasper" of type String.<br>
+		      The second subreport element has $F{EMAIL_ADDRESSES} as connection expression (of type <i>datasource expression</i>) and as subreport expression "/email.jasper" of type String.<br>
+		      In hobby.jasper we have defined only one field:<br>
+		      
+		      		  <table border=0 cellpadding=1 cellspacing=1 bgcolor=#000000>
+		      <tr>
+		      	<td bgcolor="#AAAAAA"><font class="fsmall">&nbsp;Field Name&nbsp;</td>
+		      	<td bgcolor="#AAAAAA"><font class="fsmall">&nbsp;Field Description&nbsp;</td>
+		      	<td bgcolor="#AAAAAA"><font class="fsmall">&nbsp;Type&nbsp;</td>
+		      </tr> 
+		      <tr>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;HOBBY&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;/hobbies/hobby&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;java.lang.String&nbsp;</td>
+		      </tr> 
+		      </table>
+		      <br>
+		      The same in email.jasper:<br>
+		      
+		      		  <table border=0 cellpadding=1 cellspacing=1 bgcolor=#000000>
+		      <tr>
+		      	<td bgcolor="#AAAAAA"><font class="fsmall">&nbsp;Field Name&nbsp;</td>
+		      	<td bgcolor="#AAAAAA"><font class="fsmall">&nbsp;Field Description&nbsp;</td>
+		      	<td bgcolor="#AAAAAA"><font class="fsmall">&nbsp;Type&nbsp;</td>
+		      </tr> 
+		      <tr>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;EMAIL&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;/person/email&nbsp;</td>
+		      	<td bgcolor="#FFFFFF"><font class="fsmall">&nbsp;java.lang.String&nbsp;</td>
+		      </tr> 
+		      </table>
+		      <br>
+		      Note as every field in subreport are defined specifing as root element in the path the parent element:<br>
+		      HOBBY -&gt; /hobbies/hobby<br>
+		      EMAIL -&gt; /person/email<br>
+		      <br>
+		      
+		      This is the result:<br>
+<table border=0><tr><td><a href="manual0.2.0/7_3big.jpg"><img border=0 src="manual0.2.0/7_3.jpg"></a></td></tr><tr><td><font class="fsmall"><b>Fig.7.2: The final result.</b></font></td></tr></table>
+		      
+		      Finally we show how to use the JRXMLDataDource in a program:<br><br>
+		     
+<TABLE id="Header" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#EEDDDD">
+<tr>
+<td colspan="2" width="33%">&nbsp;</td>
+<td align="center" colspan="2" width="33%">
+<font size="4">XMLDataSourceExample.java</font>
+</td>
+<td align="right" colspan="2" width="33%">&nbsp;</td>
+</tr>
+</TABLE>
+<pre ID="Classes">
+<FONT ID="LN">1   </FONT><A NAME="1"></A><FONT ID="Package">package</FONT> <A HREF="../../../../it.businesslogic.ireport.examples.index.html" target="packageFrame">it.businesslogic.ireport.examples</A>;
+<FONT ID="LN">2   </FONT><A NAME="2"></A>
+<FONT ID="LN">3   </FONT><A NAME="3"></A><FONT ID="Import">import</FONT> it.businesslogic.ireport.connection.JRXMLDataSource;
+<FONT ID="LN">4   </FONT><A NAME="4"></A><FONT ID="Import">import</FONT> dori.jasper.engine.export.JRPdfExporter;
+<FONT ID="LN">5   </FONT><A NAME="5"></A>
+<FONT ID="LN">6   </FONT><A NAME="6"></A><FONT ID="Import">import</FONT> dori.jasper.engine.*;
+<FONT ID="LN">7   </FONT><A NAME="7"></A><FONT ID="Import">import</FONT> java.util.HashMap;
+<FONT ID="LN">8   </FONT><A NAME="8"></A>
+<FONT ID="LN">9   </FONT><A NAME="9"></A>
+<FONT ID="LN">10  </FONT><A NAME="10"></A><FONT ID="Public">public</FONT> <FONT ID="Class">class</FONT> XMLDataSourceExample {
+<FONT ID="LN">11  </FONT><A NAME="11"></A>
+<FONT ID="LN">12  </FONT><A NAME="12"></A>    <FONT ID="Public">public</FONT> <FONT ID="Static">static</FONT> <FONT ID="Void">void</FONT> main(String[] args) <FONT ID="Throws">throws</FONT> Exception {
+<FONT ID="LN">13  </FONT><A NAME="13"></A>
+<FONT ID="LN">14  </FONT><A NAME="14"></A>                String reportFileName = <FONT ID="StringLiteral">"/addressbook.jasper"</FONT>;
+<FONT ID="LN">15  </FONT><A NAME="15"></A>                String outFileName = <FONT ID="StringLiteral">"/addressbook.pdf"</FONT>;
+<FONT ID="LN">16  </FONT><A NAME="16"></A>                String xmlFileName = <FONT ID="StringLiteral">"/addressbook.xml"</FONT>;
+<FONT ID="LN">17  </FONT><A NAME="17"></A>                String recordPath = <FONT ID="StringLiteral">"/addressbook/category/person"</FONT>;
+<FONT ID="LN">18  </FONT><A NAME="18"></A>                
+<FONT ID="LN">19  </FONT><A NAME="19"></A>                JRXMLDataSource jrxmlds = <FONT ID="New">new</FONT> JRXMLDataSource(xmlFileName,recordPath);
+<FONT ID="LN">20  </FONT><A NAME="20"></A>                
+<FONT ID="LN">21  </FONT><A NAME="21"></A>        HashMap hm = <FONT ID="New">new</FONT> HashMap();
+<FONT ID="LN">22  </FONT><A NAME="22"></A>        
+<FONT ID="LN">23  </FONT><A NAME="23"></A>        <FONT ID="Try">try</FONT>
+<FONT ID="LN">24  </FONT><A NAME="24"></A>        {
+<FONT ID="LN">25  </FONT><A NAME="25"></A>            JasperPrint print = JasperFillManager.fillReport(
+<FONT ID="LN">26  </FONT><A NAME="26"></A>                        reportFileName, 
+<FONT ID="LN">27  </FONT><A NAME="27"></A>                        hm, 
+<FONT ID="LN">28  </FONT><A NAME="28"></A>                        jrxmlds);
+<FONT ID="LN">29  </FONT><A NAME="29"></A>            
+<FONT ID="LN">30  </FONT><A NAME="30"></A>            JRExporter exporter = <FONT ID="New">new</FONT> dori.jasper.engine.export.JRPdfExporter();
+<FONT ID="LN">31  </FONT><A NAME="31"></A>            
+<FONT ID="LN">32  </FONT><A NAME="32"></A>            exporter.setParameter(JRExporterParameter.OUTPUT_FILE_NAME,outFileName);
+<FONT ID="LN">33  </FONT><A NAME="33"></A>                    exporter.setParameter(JRExporterParameter.JASPER_PRINT,print);
+<FONT ID="LN">34  </FONT><A NAME="34"></A>                    
+<FONT ID="LN">35  </FONT><A NAME="35"></A>                    exporter.exportReport();
+<FONT ID="LN">36  </FONT><A NAME="36"></A>                    System.out.println(<FONT ID="StringLiteral">"Created file: "</FONT> + outFileName);             
+<FONT ID="LN">37  </FONT><A NAME="37"></A>        }
+<FONT ID="LN">38  </FONT><A NAME="38"></A>        <FONT ID="Catch">catch</FONT> (JRException e)
+<FONT ID="LN">39  </FONT><A NAME="39"></A>        {
+<FONT ID="LN">40  </FONT><A NAME="40"></A>            e.printStackTrace();
+<FONT ID="LN">41  </FONT><A NAME="41"></A>            System.exit(<FONT ID="IntegerLiteral">1</FONT>);
+<FONT ID="LN">42  </FONT><A NAME="42"></A>        }
+<FONT ID="LN">43  </FONT><A NAME="43"></A>        <FONT ID="Catch">catch</FONT> (Exception e)
+<FONT ID="LN">44  </FONT><A NAME="44"></A>        {
+<FONT ID="LN">45  </FONT><A NAME="45"></A>            e.printStackTrace();
+<FONT ID="LN">46  </FONT><A NAME="46"></A>            System.exit(<FONT ID="IntegerLiteral">1</FONT>);
+<FONT ID="LN">47  </FONT><A NAME="47"></A>        }
+<FONT ID="LN">48  </FONT><A NAME="48"></A>
+<FONT ID="LN">49  </FONT><A NAME="49"></A>    }
+<FONT ID="LN">50  </FONT><A NAME="50"></A>
+<FONT ID="LN">51  </FONT><A NAME="51"></A>}
+</pre></font><br>
+		      <font class="ftitparagrafo"><a name="7.5"></a><b>7.5 XML Datasource license</b></font><br><br>
+		      <font class="fsmall">JRXMLDatasource is not released under GPL license (as iReport is) but under <b>LGPL</b> as jasperreports: in this way you can use the JRXMLDataSource
+in your program without problems.<br>However, if you use it, please make a simbolic donation to the iReport project.<br><br>		    
+		      </td>		     
+		  </tr>
+		   </table>
+		   </td>
+		    </tr> 
+		   </table></td></tr></table></td>
+  </tr>
+  <tr height="15"><td><table  width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+	  <td height="1" colspan="2" bgcolor="#000000"><img src="images/null.gif height="1" width="1"></td>
+	</tr>
+	 <tr> 
+	  <td   height="14" bgcolor="#D4D0C8" valign="bottom" align="center"><font class="fsmall">(c) 2002 by Giulio Toffoli &lt;gt78 at businesslogic.it&gt;</font></td>
+	</tr>
+      </table></td>
+  </tr>
+</table></body>
+</html>
